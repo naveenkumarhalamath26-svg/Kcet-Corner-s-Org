@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners for standalone view -->
+  <rect width="512" height="512" rx="104" fill="url(#bgGrad)" />
+  
+  <!-- Outer golden ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-dasharray="16 8" opacity="0.65" />
+  <circle cx="256" cy="256" r="172" fill="#0f172a" stroke="#ffffff" stroke-width="4" opacity="0.9" />
+  
+  <!-- Graduation Cap / Mortarboard -->
+  <polygon points="256,140 370,195 256,250 142,195" fill="url(#goldGrad)" />
+  <!-- Cap skull cap base -->
+  <path d="M 180,215 L 180,270 C 180,310 332,310 332,270 L 332,215 Z" fill="#1e3a8a" opacity="0.9" stroke="url(#goldGrad)" stroke-width="3" />
+  <!-- Tassel -->
+  <line x1="332" y1="205" x2="354" y2="255" stroke="#fef08a" stroke-width="5" stroke-linecap="round" />
+  <circle cx="354" cy="262" r="8" fill="#fef08a" />
+
+  <!-- Open Book -->
+  <path d="M 170,360 C 215,340 248,348 256,364 C 264,348 297,340 342,360 L 342,320 C 297,300 264,308 256,324 C 248,308 215,300 170,320 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+  <line x1="256" y1="324" x2="256" y2="364" stroke="#64748b" stroke-width="3" />
+
+  <!-- Text KSEAB II PUC -->
+  <text x="256" y="415" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#f8fafc" letter-spacing="3">KSEAB PUC</text>
+  <text x="256" y="442" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="16" fill="#f59e0b" letter-spacing="4">OFFLINE PORTAL</text>
+</svg>

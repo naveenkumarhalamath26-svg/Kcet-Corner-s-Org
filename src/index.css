@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Eye Comfort Mode (Warm Sepia) */
+body.mode-sepia {
+  background-color: #fbf7ee !important;
+  color: #3b3024 !important;
+}
+
+body.mode-sepia .bg-white {
+  background-color: #f5eedb !important;
+  border-color: #e5dac2 !important;
+}
+
+body.mode-sepia .bg-slate-50,
+body.mode-sepia .bg-slate-100 {
+  background-color: #eee4cc !important;
+  border-color: #e0d4b9 !important;
+}
+
+body.mode-sepia .text-slate-900 {
+  color: #2c2217 !important;
+}
+
+body.mode-sepia .text-slate-600,
+body.mode-sepia .text-slate-700 {
+  color: #5c4d3b !important;
+}
+
+/* Dark Mode support */
+body.mode-dark {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+body.mode-dark .bg-white {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+body.mode-dark .bg-slate-50 {
+  background-color: #0f172a !important;
+}
+
+body.mode-dark .bg-slate-100 {
+  background-color: #334155 !important;
+}
+
+body.mode-dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+body.mode-dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+body.mode-dark .text-slate-700,
+body.mode-dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+body.mode-dark .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+body.mode-dark .border-slate-100 {
+  border-color: #1e293b !important;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 3D Flip Card Utilities */
+.perspective-1000 {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d !important;
+  -webkit-transform-style: preserve-3d !important;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: transform;
+}
+.backface-hidden {
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg) !important;
+  -webkit-transform: rotateY(180deg) !important;
+}

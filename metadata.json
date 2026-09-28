@@ -1,0 +1,8 @@
+{
+  "name": "KCET CORNER ",
+  "description": "Interactive Karnataka Board II PUC \u0026 KCET practice platform featuring official curriculum PCMB questions, model papers, chapter quizzes, performance analytics, and offline study tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
